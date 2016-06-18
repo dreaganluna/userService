@@ -34,5 +34,16 @@ describe( "in config", function()
 				done();
 			});
 		});
+
+
+		it('should raise an error when no config is found', function(done)
+		{
+			_config.getFromFile("nofile.json", function(err, config)
+			{
+				expect(err).to.be.an("error");
+				err.should.have.a.property("message", "Config file not found.");
+				done();
+			});
+		});
 	});
 });
