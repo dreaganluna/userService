@@ -1,0 +1,23 @@
+{
+  "name": "userservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreaganluna/userService.git"
+  },
+  "author": "Mikaël Spruyt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dreaganluna/userService/issues"
+  },
+  "homepage": "https://github.com/dreaganluna/userService#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
