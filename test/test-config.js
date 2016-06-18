@@ -45,5 +45,16 @@ describe( "in config", function()
 				done();
 			});
 		});
+
+
+		it('should raise an error when the config is empty', function(done)
+		{
+			_config.getFromFile("test/assets/empty-config.json", function(err, config)
+			{
+				expect(err).to.be.an("error");
+				err.should.have.a.property("message", "Invalid config file.");
+				done();
+			});
+		});
 	});
 });
