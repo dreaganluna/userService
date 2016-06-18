@@ -1,1 +1,2 @@
-console.log('hello world!');
+var winston = require('./lib/logger.js')('userService');
+winston.info("hello world!");
